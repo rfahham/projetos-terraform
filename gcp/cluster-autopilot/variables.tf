@@ -1,5 +1,5 @@
 variable "project_id" {
-    default = "devops-rfahham-413414"
+    default = ""
 }
 
 variable "region" {
