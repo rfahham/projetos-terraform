@@ -10,7 +10,7 @@ terraform {
 # Credenciais
 provider "google" {
   project     = "devops-rfahham-413414"
-  credentials = file("devops-rfahham-413414-552a02af80d8.json")
+  credentials = file("")
   region      = "southamerica-east1"
 }
 
