@@ -10,7 +10,7 @@ terraform {
 # Credenciais
 provider "google" {
   project     = "devops-rfahham-413414"
-  credentials = "devops-rfahham-413414-552a02af80d8.json"
+  credentials = ""
   region      = "southamerica-east1"
 }
 
