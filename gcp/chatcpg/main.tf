@@ -46,5 +46,3 @@ resource "google_compute_instance" "example_instance" {
   tags = ["http-server"]
   
 }
-
-1.682,27 
