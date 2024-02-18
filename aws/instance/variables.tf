@@ -41,9 +41,3 @@ variable "number_instances" {
   description = "Numero de instancias"
   default     = 1
 }
-
-variable "name_instances" {
-  type = string
-  # default     = "AWS"
-  description = "Nome das instancias"
-}
