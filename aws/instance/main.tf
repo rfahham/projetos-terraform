@@ -4,7 +4,7 @@ terraform {
   required_providers {
     aws = {
       source  = "hashicorp/aws"
-      version = "5.37.0" # pode ser pego no arquivo ".terrafor.lock.hcl"
+      version = "5.37.0"
     }
   }
 }
@@ -19,5 +19,10 @@ resource "aws_instance" "web" {
   ami           = var.aws_ami
   instance_type = var.instance_type
   tags          = var.instance_tags
+  key_name = aws_key_pair.this.key_name
+}
 
+resource "aws_key_pair" "this" {
+  key_name   = "aws-instance-key"
+  public_key = file("~/.ssh/id_rsa.pub")
 }
