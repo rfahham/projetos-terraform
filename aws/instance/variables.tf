@@ -1,8 +1,3 @@
-variable "environment" {
-  type = string
-  description = "Ambiente onde será criada a instância"
-}
-
 variable "aws_region" {
   type        = string
   # default     = "us-east-1"
