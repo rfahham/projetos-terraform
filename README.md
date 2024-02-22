@@ -45,64 +45,32 @@ Os provedores expõem recursos, o que possibilita a criação de infraestrutura 
 - PaaS: Kubernetes, Heroku, Digital Ocean
 - Saas: New Relic, Datadog
 
-[Instalação do Terraform](./docs/install.md)
+## Instalação
 
-[tfenv - gerenciador de versões](./docs/tfenv.md)
+[Instalação do Terraform](./docs/terraform/install.md)
 
-[Criar um bucket](./docs/resgitry.md)
+[tfenv - gerenciador de versões](./docs/terraform/tfenv.md)
 
-[Implementação](./doc/conf.md)
+[Implementação](./doc/terraform/conf.md)
 
 ## Comandos terraform
 
-[terraform format](.docs/format.md)
+[terraform format](.docs/terraform/format.md)
 
-[terraform validate](./docs/validate.md)
+[terraform validate](./docs/terraform/validate.md)
 
-[terraform init](./docs/init.md)
+[terraform init](./docs/terraform/init.md)
 
-[terraform plan](./docs/plan.md)
+[terraform plan](./docs/terraform/plan.md)
 
-[terraform apply](./docs/apply.md)
+[terraform apply](./docs/terraform/apply.md)
 
-[terraform destroy](./docs/destroy.md)
+[terraform destroy](./docs/terraform/destroy.md)
 
 ## Comandos Bucket
 
-[Listar](./docs/listar.md)
+[Criar um bucket](./docs/bucket/resgitry.md)
 
-## Configurando acesso para os objetos AWS
+[Listar](./docs/bucket/listar.md)
 
-[Upload e Acesso para os objetos](./docs/objetos.md)
-
-## Variáveis
-
-Caso não seja informado no arquivo de variáveis o valor default, na aplicação da receita será solicitado a informação
-
-Passando o valor default
-
-    variable "aws_profile" {
-    type        = string
-    default     = "terraform"
-    description = "Profile do terraform que está sendo utilizado"
-    }
-
-Removendoo valor default
-
-    variable "aws_profile" {
-    type        = string
-
-    description = "Profile do terraform que está sendo utilizado"
-    }
-
-```bash
-terraform plan
-var.aws_profile
-    Enter a value: Default
-```
-
-## Outras formas de setar variáveis
-
-    TF-VAR_aws_profile=terraform terraform apply
-
-    terraform plan -var=awx_profile="terraform -var="instance_type=t2.micro"
+[Upload e Acesso para os objetos](./docs/bucket/objetos.md)
