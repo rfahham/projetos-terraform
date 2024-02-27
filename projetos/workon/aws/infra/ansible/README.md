@@ -80,4 +80,3 @@ ec2-user@ec2-<IP>.compute-1.amazonaws.com | SUCCESS => {
 ```bash
 ansible-playbook ./playbooks/nginx.yaml
 ```
-

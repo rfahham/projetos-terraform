@@ -23,7 +23,7 @@ list:
 ## Configura o ambiente do TAAS.
 prepare:
 	@${MAKE} layout MESSAGE="Configura o ambiente para execução Local"
-	@/infra/terraform/terraform plan main.tf
+	@terraform plan aws/infra/terraform/
     
 ## Criando as instâncias
 create:
@@ -51,3 +51,10 @@ help:
 	} \
 	{ lastLine = $$0 }' $(MAKEFILE_LIST) | sort
 	@printf "\n\n"
+
+
+
+Procedimento
+1 - Terraform - terraform plan, terraform apply
+2 - Subir os nomes das instâncias para o etc/ansible/hosts
+3 - Ansible - ansible-playbook nginx.yaml

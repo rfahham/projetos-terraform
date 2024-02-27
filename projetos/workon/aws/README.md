@@ -29,3 +29,5 @@ ansible all -i /etc/ansible/hosts -m ping
 ```bash
 ansible-playbook ./playbooks/nginx/nginx.yaml
 ```
+
+
