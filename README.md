@@ -49,7 +49,7 @@ Os provedores expõem recursos, o que possibilita a criação de infraestrutura 
 
 [Instalação do Terraform](./docs/terraform/install.md)
 
-[tfenv - gerenciador de versões](./docs/terraform/tfenv.md)
+[tfenv - gerenciador de versões](./docs/terraform/tfenv/tfenv.md)
 
 [Implementação](./doc/terraform/conf.md)
 
