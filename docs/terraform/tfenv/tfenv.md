@@ -5,5 +5,7 @@ Com esta ferramenta, você pode instalar facilmente qualquer versão necessária
 
 [Repositório no Github](https://github.com/tfutils/tfenv)
 
-[Instalação LINUX](./linux.md)
-[Instalação MACOS](./macos.md)
+## Instalação 
+[LINUX](./linux.md)
+
+[MACOS](./macos.md)
