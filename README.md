@@ -47,29 +47,29 @@ Os provedores expõem recursos, o que possibilita a criação de infraestrutura 
 
 ## Instalação
 
-[Instalação do Terraform](./docs/terraform/install.md)
+[Terraform](./docs/terraform/install.md)
 
-[tfenv - gerenciador de versões](./docs/terraform/tfenv/tfenv.md)
+[tfenv](./docs/terraform/tfenv/tfenv.md) - Gerenciador de versões do Terraform
 
-[Implementação](./doc/terraform/conf.md)
+[Implementação](./doc/terraform/conf.md) - Alguns exemplo de implementação do Terraform
 
 ## Comandos terraform
 
-[terraform format](.docs/terraform/format.md)
+[terraform format](.docs/terraform/format.md) - Formata o arquivo do Terraform
 
-[terraform validate](./docs/terraform/validate.md)
+[terraform validate](./docs/terraform/validate.md) - Valida a receita do Terraform
 
-[terraform init](./docs/terraform/init.md)
+[terraform init](./docs/terraform/init.md) - Valida se o arquivo tem alguma inconsistência
 
-[terraform plan](./docs/terraform/plan.md)
+[terraform plan](./docs/terraform/plan.md) - Verifica o Plano que será executado
 
-[terraform apply](./docs/terraform/apply.md)
+[terraform apply](./docs/terraform/apply.md) - Aplica a receita do Terraform
 
-[terraform destroy](./docs/terraform/destroy.md)
+[terraform destroy](./docs/terraform/destroy.md) - Destrou a infra criada com o Terrafomr
 
 ## Comandos Bucket
 
-[Criar um bucket](./docs/bucket/resgitry.md)
+[Criar](./docs/bucket/resgitry.md)
 
 [Listar](./docs/bucket/listar.md)
 

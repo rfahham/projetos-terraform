@@ -1,6 +1,6 @@
 # terraform init
 
-## Inicializando o terraform
+Inicializando o terraform
 
 ```bash
 ✗ terraform init

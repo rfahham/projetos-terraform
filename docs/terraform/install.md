@@ -1,8 +1,8 @@
 # Install Terraform
 
-[Downloads](https://www.terraform.io/downloads.html)
+[Página oficial para Downloads](https://www.terraform.io/downloads.html)
 
-![Install Terraform](image/install.png)
+![Install Terraform](../image/install.png)
 
 ## macOS
 
@@ -11,6 +11,14 @@ Package manager
 ```bash
 ✗ brew tap hashicorp/tap
 ✗ brew install hashicorp/tap/terraform
+```
+
+Binary Download
+
+Fazer o Download do binário na página oficial e depois mover para a pasta `usr/local/bin`
+
+```bash
+✗ mv ~/Downloads/terraform /usr/local/bin/terraform
 ```
 
 ## Verificar versão instalada via BREW

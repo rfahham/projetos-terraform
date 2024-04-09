@@ -1,5 +1,7 @@
 # TFENV - Linux
 
+Gerenciador de versões do `Terraform`
+
 ## Instalação
 
 ### Clone os arquivos de origem em ~/.tfenv
@@ -8,7 +10,7 @@
 git clone https://github.com/tfutils/tfenv.git ~/.tfenv
 ```
 
-###  Adicione ~/.tfenv/binao seu $PATH
+###  Adicione ~/.tfenv/binário seu $PATH
 
 ```bash
 echo 'export PATH="$HOME/.tfenv/bin:$PATH"' >> ~/.bash_profile
@@ -69,7 +71,7 @@ tfenv pin
 ```
 
 ### Desinstalar
-Excluir entrada do ~/.bash_profilearquivo
+Excluir entrada do ~/.bash_profile
 
 ```bash
 grep -v 'export PATH="$HOME/.tfenv/bin:$PATH"' ~/.bash_profile > ~/.bash_profile_tmp && mv ~/.bash_profile_tmp ~/.bash_profile
@@ -81,51 +83,8 @@ grep -v 'export PATH="$HOME/.tfenv/bin:$PATH"' ~/.bash_profile > ~/.bash_profile
 sudo unlink /usr/local/bin/tfenv
 ```
 
-### Excluir ~/.tfenvpasta
+### Excluir ~/.tfenv
 
 ```bash
 rm -rf ~/.tfenv/
-```
-
-
-
-
-
-Referência:
-
-[Repositório no Github](https://github.com/tfutils/tfenv)
-
-## Install
-
-```bash
-✗ brew install tfenv
-```
-
-## Verificar a versão
-
-```bash
-✗ tfenv -v
-    tfenv 3.0.0
-```
-
-## Instalar uma versão
-
-```bash
-✗ tfenv install latest
-```
-
-## Verificar versão instaladada para o tfenv
-
-```bash
-✗ tfenv list
-    1.7.3
-    No default set. Set with 'tfenv use <version>'
-```
-
-## Alternando entre as versões
-
-```bash
-✗ tfenv use latest
-    Switching default version to v1.7.3
-    Default version (when not overridden by .terraform-version or TFENV_TERRAFORM_VERSION) is now: 1.7.3
 ```
