@@ -1,5 +1,5 @@
 locals {
-  # Common tags to be assigned to all resources
+
   common_tags = {
     Name        = "bucket-dev-rfahham"
     Service     = "bucket-dev-rfahham"
@@ -9,5 +9,6 @@ locals {
   }
 
   ip_filepath = "ips.json"
-  file        = "index.html"
+
+  file = "index.html"
 }

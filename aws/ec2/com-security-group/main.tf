@@ -1,8 +1,3 @@
-provider "aws" {
-  region  = var.aws_region
-  profile = var.aws_profile
-}
-
 terraform {
   required_version = "1.7.4"
 
@@ -18,4 +13,14 @@ terraform {
     }
 
   }
+
+  # Remote State
+
+  backend "s3" {
+    bucket  = "tfstate-058264412712"
+    key     = "projetos/com-security-group/terraform.tfstate"
+    region  = "us-east-1"
+    profile = "terraform"
+  }
+
 }
