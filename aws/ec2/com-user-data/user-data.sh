@@ -3,7 +3,7 @@
 # Atualizar os pacotes
 sudo yum update -y
 
-# Instalar Docker
+# Instalar ferramentas
 sudo yum install git -y
 sudo yum install curl -y
 sudo yum install jq -y
@@ -15,5 +15,13 @@ sudo gpg --no-default-keyring --keyring /usr/share/keyrings/k6-archive-keyring.g
 echo "deb [signed-by=/usr/share/keyrings/k6-archive-keyring.gpg] https://dl.k6.io/deb stable main" | sudo tee /etc/apt/sources.list.d/k6.list
 sudo apt-get update
 sudo apt-get install k6
+
+# Utilizando httpd
+
+sudo yum update -y
+sudo yum install -y httpd
+sudo systemctl start httpd
+sudo systemctl enable httpd
+echo "<h1>Hello World from $(hostname -f)</h1>" > /var/www/html/index.html
 
 
